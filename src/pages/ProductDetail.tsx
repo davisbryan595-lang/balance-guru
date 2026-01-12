@@ -237,9 +237,7 @@ const ProductDetail = () => {
               <div className="pt-8 border-t border-primary/20">
                 <h3 className="font-display text-xl mb-4">About this product</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  This premium product is designed for elite performance and durability. 
-                  Engineered with the latest technology and crafted with attention to detail, 
-                  this is the choice of professionals and enthusiasts worldwide.
+                  {product.description || "This premium product is designed for elite performance and durability. Engineered with the latest technology and crafted with attention to detail, this is the choice of professionals and enthusiasts worldwide."}
                 </p>
               </div>
 
