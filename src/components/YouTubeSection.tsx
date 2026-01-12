@@ -1,48 +1,48 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Play, Youtube, ExternalLink, Eye, Clock, Award } from "lucide-react";
+import { Play, Youtube, ExternalLink, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const videos = [
   {
     id: "1",
-    title: "WORLD RECORD Balance Challenge",
-    thumbnail: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop",
+    title: "Thoughts of Life",
+    thumbnail: "https://cdn.builder.io/api/v1/image/assets%2F8b84be17aad14310b285d25f23a3235d%2F3ac3a1b0fc5847aab365b95738f9631b?format=png&width=1200",
     views: "2.5M",
     duration: "12:34",
     description: "Watch me break the Guinness World Record for the most incredible balance feat ever attempted.",
     featured: true,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "MJyKIsdFFWE",
   },
   {
     id: "2",
     title: "5 Balance Exercises for Beginners",
-    thumbnail: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=800&h=450&fit=crop",
+    thumbnail: "https://img.youtube.com/vi/L3hjBovlaxk/maxresdefault.jpg",
     views: "850K",
     duration: "8:21",
     description: "Perfect your foundation with these essential balance techniques.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "L3hjBovlaxk",
   },
   {
     id: "3",
     title: "Behind the Scenes: Training Day",
-    thumbnail: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=450&fit=crop",
+    thumbnail: "https://img.youtube.com/vi/2wHXYg3230I/maxresdefault.jpg",
     views: "1.2M",
     duration: "15:47",
     description: "A day in the life of The Balance Guru - see my training routine.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "2wHXYg3230I",
   },
   {
     id: "4",
     title: "Impossible Balance Tricks Explained",
-    thumbnail: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=450&fit=crop",
+    thumbnail: "https://img.youtube.com/vi/k0rlx4lpMlc/maxresdefault.jpg",
     views: "980K",
     duration: "10:15",
     description: "Breaking down the physics behind seemingly impossible feats.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "k0rlx4lpMlc",
   },
 ];
 
@@ -72,11 +72,12 @@ const VideoCard = ({ video, index }: { video: typeof videos[0]; index: number })
             src={video.thumbnail}
             alt={video.title}
             className="w-full h-full object-cover"
+            style={{ filter: "contrast(1.1) brightness(1.05)" }}
             animate={{ scale: isHovered ? 1.1 : 1 }}
             transition={{ duration: 0.6 }}
           />
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
 
         {/* Play Button */}
@@ -115,18 +116,9 @@ const VideoCard = ({ video, index }: { video: typeof videos[0]; index: number })
 
         {/* Content */}
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <div className="flex items-center gap-2 text-muted-foreground text-sm mb-2">
-            <Eye className="w-4 h-4" />
-            {video.views} views
-          </div>
           <h3 className={`font-display ${video.featured ? "text-2xl md:text-3xl" : "text-xl"} text-foreground leading-tight`}>
             {video.title}
           </h3>
-          {video.featured && (
-            <p className="mt-2 text-muted-foreground hidden md:block">
-              {video.description}
-            </p>
-          )}
         </div>
 
         {/* Glow border */}

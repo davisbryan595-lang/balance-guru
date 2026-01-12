@@ -14,10 +14,10 @@ const About = () => {
           backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F91aa7f06c0a4425ead2244235fab3425?format=webp&width=800')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.1,
+          opacity: 0.15,
           zIndex: 0
         }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-background via-background/30" />
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
             className="text-center"
