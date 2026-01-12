@@ -30,6 +30,13 @@ const products = [
 const ProductsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
+
+  const handleProductClick = (product: typeof products[0]) => {
+    if (product.category) {
+      navigate(`/shop?category=${product.category}`);
+    }
+  };
 
   return (
     <section id="products" className="section-padding bg-background relative overflow-hidden">
