@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const videos = [
   {
     id: "1",
-    title: "WORLD RECORD Balance Challenge",
-    thumbnail: "https://img.youtube.com/vi/MJyKIsdFFWE/maxresdefault.jpg",
+    title: "Thoughts of Life",
+    thumbnail: "https://cdn.builder.io/api/v1/image/assets%2F8b84be17aad14310b285d25f23a3235d%2F3ac3a1b0fc5847aab365b95738f9631b?format=webp&width=800",
     views: "2.5M",
     duration: "12:34",
     description: "Watch me break the Guinness World Record for the most incredible balance feat ever attempted.",
