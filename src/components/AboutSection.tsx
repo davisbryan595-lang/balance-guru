@@ -72,9 +72,9 @@ const AboutSection = () => {
               
               <div className="relative glass-strong rounded-xl overflow-hidden p-2">
                 <motion.img
-                  src={travisImage}
+                  src="https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F91aa7f06c0a4425ead2244235fab3425?format=webp&width=800"
                   alt="Travis Horn - The Balance Guru"
-                  className="w-full h-auto rounded-lg grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-auto rounded-lg transition-all duration-700"
                   whileHover={{ scale: 1.02 }}
                 />
                 
