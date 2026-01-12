@@ -6,10 +6,10 @@ import { useCart } from "@/contexts/CartContext";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about", pageLink: "/about" },
+  { label: "About", href: "/about" },
   { label: "Shop", href: "/shop" },
   { label: "Legacy", href: "/legacy" },
-  { label: "Contact", href: "/#contact", pageLink: "/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
