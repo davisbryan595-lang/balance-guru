@@ -286,6 +286,39 @@ const ProductDetail = () => {
         </div>
       </section>
 
+      {/* Achedaway Product Showcase */}
+      {product.id === "scraper-mini" && (
+        <section
+          className="py-16 relative overflow-hidden"
+          style={{
+            backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F8e813a9f411740bfbfe2b75b4a5aa3de?format=webp&width=1200')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="container mx-auto px-6 relative z-10">
+            <motion.div
+              className="text-center max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-display text-4xl md:text-5xl text-white mb-6">
+                The Perfect Companion
+              </h2>
+              <p className="text-lg text-white/90 mb-8">
+                Achedaway Mini Scraper - Perfect for Targeting Small Muscle Groups
+              </p>
+              <p className="text-white/80 leading-relaxed">
+                Engineered for athletes, trainers, and wellness enthusiasts. The heated muscle scraper provides targeted relief with adjustable temperature settings, making it ideal for post-workout recovery and muscle maintenance.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       {/* Related Products Section */}
       <section className="py-16 border-t border-primary/20">
         <div className="container mx-auto px-6">
