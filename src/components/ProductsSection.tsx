@@ -8,14 +8,16 @@ const products = [
   {
     title: "Achedaway Mini Scraper",
     subtitle: "On-the-Go Heated Muscle Scraping Tool",
-    image: "/products/scraper.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F4c583a3ee0a4493eb5e6fca0dada86fa?format=webp&width=800",
     featured: true,
+    category: "equipment",
   },
   {
     title: "Gifts for Her",
     subtitle: "Premium girls wear collection",
-    image: "/products/gifts-her.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F244813e8d05842539f5495e9d183a682?format=webp&width=800",
     featured: false,
+    category: "gifts",
   },
   {
     title: "Gifts for Him",
