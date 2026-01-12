@@ -5,6 +5,7 @@ import { ArrowLeft, ShoppingCart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProductImageCarousel from "@/components/ProductImageCarousel";
 import { useCart } from "@/contexts/CartContext";
 import { allProducts } from "@/data/products";
 import { useToast } from "@/hooks/use-toast";
