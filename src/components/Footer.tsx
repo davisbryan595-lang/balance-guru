@@ -38,37 +38,205 @@ const Footer = () => {
 
           {/* Social Links */}
           <motion.div
-            className="mt-10 flex items-center gap-4"
+            className="mt-10 flex flex-wrap items-center justify-center gap-3"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
             <motion.a
+              href="https://linktr.ee/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Linktree"
+            >
+              <Link2 className="w-4 h-4" />
+            </motion.a>
+            <motion.a
               href="https://www.instagram.com/thebalanceguru/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-xl glass flex items-center justify-center text-muted-foreground hover:text-primary hover:glow-border transition-all duration-300"
-              whileHover={{ scale: 1.1, y: -3 }}
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              title="Instagram"
             >
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-4 h-4" />
             </motion.a>
             <motion.a
-              href="#"
-              className="w-12 h-12 rounded-xl glass flex items-center justify-center text-muted-foreground hover:text-primary hover:glow-border transition-all duration-300"
-              whileHover={{ scale: 1.1, y: -3 }}
+              href="https://www.youtube.com/@thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              title="YouTube"
             >
-              <Youtube className="w-5 h-5" />
+              <Youtube className="w-4 h-4" />
             </motion.a>
             <motion.a
-              href="#"
-              className="w-12 h-12 rounded-xl glass flex items-center justify-center text-muted-foreground hover:text-primary hover:glow-border transition-all duration-300"
-              whileHover={{ scale: 1.1, y: -3 }}
+              href="https://www.threads.com/@thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              title="Threads"
             >
-              <Twitter className="w-5 h-5" />
+              <MessageCircle className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://x.com/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="X (Twitter)"
+            >
+              <Twitter className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://www.facebook.com/travisearlhorn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Facebook"
+            >
+              <Facebook className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="mailto:balanceguru17@gmail.com"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Email"
+            >
+              <Mail className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://api.whatsapp.com/send?phone=17256001976"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="WhatsApp"
+            >
+              <MessageCircle className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://discord.gg/ZJhdFKb9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Discord"
+            >
+              <MessageSquare className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/travis-horn-640107b9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="LinkedIn"
+            >
+              <Linkedin className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://patreon.com/thebalanceGuru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Patreon"
+            >
+              <ShoppingCart className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://venmo.com/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Venmo"
+            >
+              <ShoppingCart className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://pinterest.com/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Pinterest"
+            >
+              <Link2 className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://www.twitch.tv/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Twitch"
+            >
+              <Twitch className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://the-balance-guru.myshopify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Shopify Store"
+            >
+              <ShoppingCart className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://open.spotify.com/user/31q7zliud4rz7wja7si5rp272efe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Spotify"
+            >
+              <Music className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="https://snapchat.com/add/thebalanceguru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Snapchat"
+            >
+              <MessageCircle className="w-4 h-4" />
+            </motion.a>
+            <motion.a
+              href="tel:+17256001976"
+              className="w-10 h-10 rounded-lg glass flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              title="Phone"
+            >
+              <Phone className="w-4 h-4" />
             </motion.a>
           </motion.div>
 
