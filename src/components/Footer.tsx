@@ -268,17 +268,18 @@ const Footer = () => {
             transition={{ delay: 0.4 }}
           />
 
-          {/* Copyright */}
+          {/* Bio Details */}
           <motion.div
-            className="mt-8 text-sm text-muted-foreground"
+            className="mt-8 text-sm text-muted-foreground max-w-2xl"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
           >
+            <p className="text-primary font-semibold mb-2">World record holder | Veteran | Brand owner | Driven by passion & purpose</p>
             <p>© {currentYear} The Balance Guru. All rights reserved.</p>
             <p className="mt-2">
-              <span className="text-primary">Travis Horn</span> • Coach • Trainer • Creator
+              <span className="text-primary">Travis Horn</span> • Coach • Trainer • Creator • World Record Holder
             </p>
           </motion.div>
         </div>
