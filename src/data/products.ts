@@ -217,6 +217,7 @@ export const allProducts: Product[] = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F5fa740c5f7924c1c848dfa0037ce3fba?format=webp&width=800",
     category: "gifts",
     colors: ["N04 Organza Sienne", "N01 Mousseline Lilas", "N06 Flanelle Rubis", "N02 Taffetas Rose", "N03 Voile Corail", "N05 Popeline Violine"],
+    defaultColor: "N01 Mousseline Lilas",
   },
   {
     id: "satin-velvet-lipstick",
@@ -226,6 +227,7 @@ export const allProducts: Product[] = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F020c97b0c91a40b385fd1b2358b9da17?format=webp&width=800",
     category: "gifts",
     colors: ["Butterscotch", "Praline", "Tease", "Haze", "Taupe Beige", "Honey Taupe", "Rose Dream", "Rose Brown", "Dusty Rose", "Peach Amber", "Peach Bud", "Warm Peach", "Soft Brown"],
+    defaultColor: "Rose Dream",
   },
 ];
 
