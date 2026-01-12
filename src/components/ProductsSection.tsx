@@ -15,14 +15,14 @@ const products = [
   {
     title: "Gifts for Her",
     subtitle: "Premium gifts collection",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2Fb439d400a8e649e2937e7f8c4a1cde07?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F8b84be17aad14310b285d25f23a3235d%2F160ad9857fcf46a79ba6c7396cfe2782?format=webp&width=800",
     featured: false,
     category: "gifts",
   },
   {
     title: "Gifts for Him",
     subtitle: "Men's premium gifts collection",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F86d69472a8b84fc88a12f6a99124927a%2F74e091e4dcfa4bd5adb919014ddf6e23?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F8b84be17aad14310b285d25f23a3235d%2F3aaba141f4fd49e2bdf42d161345e1a6?format=webp&width=800",
     featured: false,
     category: "gifts-for-him",
   },
