@@ -233,6 +233,35 @@ const ProductDetail = () => {
                 </Button>
               </motion.div>
 
+              {/* Features Section */}
+              {product.id === "scraper-mini" && (
+                <div className="pt-8 border-t border-primary/20">
+                  <h3 className="font-display text-xl mb-4">Key Features</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Auto-heated muscle scraper with adjustable temperature settings</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Three consistent temperature options: 40°C (104°F), 45°C (113°F), 50°C (122°F)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Perfect for targeting small muscle groups with precision</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Ergonomic design for easy grip and control</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Portable and lightweight for on-the-go use</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
               {/* Description */}
               <div className="pt-8 border-t border-primary/20">
                 <h3 className="font-display text-xl mb-4">About this product</h3>
