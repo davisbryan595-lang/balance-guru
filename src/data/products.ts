@@ -279,7 +279,5 @@ export const categories = [
   { id: "gifts", label: "Gifts for Her" },
   { id: "gifts-for-him", label: "Gifts for Him" },
   { id: "equipment", label: "Equipment" },
-  { id: "mens", label: "Men's" },
-  { id: "womens", label: "Women's" },
   { id: "accessories", label: "Accessories" },
 ];
