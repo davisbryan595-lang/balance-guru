@@ -24,69 +24,6 @@ export const allProducts: Product[] = [
     ],
   },
   
-  // Apparel - Women
-  {
-    id: "womens-tank-1",
-    title: "Balance Performance Tank",
-    subtitle: "Women's Athletic Training Top",
-    price: 45.00,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=1000&fit=crop",
-    category: "womens",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: ["Black", "Yellow", "White"],
-  },
-  {
-    id: "womens-leggings-1",
-    title: "Elite Training Leggings",
-    subtitle: "High-Waisted Compression Fit",
-    price: 75.00,
-    image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&h=1000&fit=crop",
-    category: "womens",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: ["Black", "Navy"],
-  },
-  {
-    id: "womens-hoodie-1",
-    title: "Guru Signature Hoodie",
-    subtitle: "Women's Premium Fleece",
-    price: 89.00,
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop",
-    category: "womens",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: ["Black", "Yellow"],
-  },
-  
-  // Apparel - Men
-  {
-    id: "mens-tee-1",
-    title: "Master Balance Tee",
-    subtitle: "Men's Performance T-Shirt",
-    price: 40.00,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop",
-    category: "mens",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Black", "Yellow", "Gray"],
-  },
-  {
-    id: "mens-shorts-1",
-    title: "Training Pro Shorts",
-    subtitle: "Athletic Performance Shorts",
-    price: 55.00,
-    image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=1000&fit=crop",
-    category: "mens",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Black", "Navy"],
-  },
-  {
-    id: "mens-hoodie-1",
-    title: "Balance Guru Hoodie",
-    subtitle: "Men's Premium Pullover",
-    price: 95.00,
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop",
-    category: "mens",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Black", "Yellow"],
-  },
   
   // Gifts for Her
   {
