@@ -88,59 +88,6 @@ export const allProducts: Product[] = [
     colors: ["Black", "Yellow"],
   },
   
-  // Equipment
-  {
-    id: "balance-board-1",
-    title: "Pro Balance Board",
-    subtitle: "Professional Training Equipment",
-    price: 199.00,
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1000&fit=crop",
-    category: "equipment",
-    featured: true,
-  },
-  {
-    id: "resistance-bands",
-    title: "Elite Resistance Band Set",
-    subtitle: "5-Level Resistance Training Kit",
-    price: 49.00,
-    image: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&h=1000&fit=crop",
-    category: "equipment",
-  },
-  {
-    id: "yoga-mat",
-    title: "Premium Training Mat",
-    subtitle: "Extra-Thick Non-Slip Surface",
-    price: 79.00,
-    image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=1000&fit=crop",
-    category: "equipment",
-  },
-  
-  // Accessories
-  {
-    id: "water-bottle",
-    title: "Hydration Bottle",
-    subtitle: "32oz Insulated Steel Bottle",
-    price: 35.00,
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=1000&fit=crop",
-    category: "accessories",
-  },
-  {
-    id: "gym-bag",
-    title: "Balance Guru Gym Bag",
-    subtitle: "Premium Training Duffel",
-    price: 85.00,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=1000&fit=crop",
-    category: "accessories",
-  },
-  {
-    id: "wristbands",
-    title: "Performance Wristbands",
-    subtitle: "Sweat-Absorbing Athletic Bands",
-    price: 15.00,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=1000&fit=crop",
-    category: "accessories",
-  },
-
   // Gifts for Her
   {
     id: "fuzzy-socks",
