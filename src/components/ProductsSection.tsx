@@ -95,11 +95,11 @@ const ProductsSection = () => {
               to="/shop"
               className="group relative inline-block px-8 py-4 font-display text-xl tracking-wider text-primary border-2 border-primary/50 rounded-xl overflow-hidden"
             >
-              <span className="relative z-10 group-hover:text-primary-foreground transition-colors duration-300">
+              <span className="relative z-10 group-hover:text-black transition-colors duration-300">
                 VIEW ALL PRODUCTS
               </span>
               <motion.div
-                className="absolute inset-0 bg-primary"
+                className="absolute inset-0 bg-yellow-400"
                 initial={{ x: "-100%" }}
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
