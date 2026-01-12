@@ -18,20 +18,7 @@ const Navbar = () => {
   const { getCartCount, setIsCartOpen } = useCart();
 
   const isActive = (item: typeof navItems[0]) => {
-    const { href, pageLink } = item;
-
-    // Check if we're on a dedicated page (e.g., /about, /contact)
-    if (pageLink && location.pathname === pageLink) {
-      return true;
-    }
-
-    // Check if we're on home page with hash link
-    if (href.startsWith("/#")) {
-      return location.pathname === "/" && location.hash === href.slice(1);
-    }
-
-    // Check regular routes
-    return location.pathname === href;
+    return location.pathname === item.href;
   };
 
   return (
