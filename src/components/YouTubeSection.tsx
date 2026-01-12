@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Play, Youtube, ExternalLink, Eye, Clock, Award } from "lucide-react";
+import { Play, Youtube, ExternalLink, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const videos = [
