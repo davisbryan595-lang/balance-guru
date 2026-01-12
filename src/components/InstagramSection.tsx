@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
-import { Instagram, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Instagram } from "lucide-react";
 
 const InstagramSection = () => {
   const ref = useRef(null);
