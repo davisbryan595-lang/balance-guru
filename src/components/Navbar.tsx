@@ -6,9 +6,10 @@ import { useCart } from "@/contexts/CartContext";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/#about", pageLink: "/about" },
   { label: "Shop", href: "/shop" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Legacy", href: "/legacy" },
+  { label: "Contact", href: "/#contact", pageLink: "/contact" },
 ];
 
 const Navbar = () => {
@@ -16,12 +17,20 @@ const Navbar = () => {
   const location = useLocation();
   const { getCartCount, setIsCartOpen } = useCart();
 
-  const isActive = (href: string) => {
-    // For hash links on home page
+  const isActive = (item: typeof navItems[0]) => {
+    const { href, pageLink } = item;
+
+    // Check if we're on a dedicated page (e.g., /about, /contact)
+    if (pageLink && location.pathname === pageLink) {
+      return true;
+    }
+
+    // Check if we're on home page with hash link
     if (href.startsWith("/#")) {
       return location.pathname === "/" && location.hash === href.slice(1);
     }
-    // For regular routes
+
+    // Check regular routes
     return location.pathname === href;
   };
 
@@ -50,7 +59,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.label}
@@ -61,7 +70,7 @@ const Navbar = () => {
                 <Link
                   to={item.href}
                   className={`nav-item font-medium text-sm uppercase tracking-wider px-4 py-2 rounded-lg transition-all ${
-                    isActive(item.href)
+                    isActive(item)
                       ? "text-primary"
                       : "text-foreground hover:text-primary/80"
                   }`}
@@ -123,7 +132,7 @@ const Navbar = () => {
                 key={item.label}
                 to={item.href}
                 className={`block py-2 font-medium uppercase tracking-wider transition-colors ${
-                  isActive(item.href)
+                  isActive(item)
                     ? "text-primary"
                     : "text-foreground/80 hover:text-primary"
                 }`}

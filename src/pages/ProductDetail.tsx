@@ -5,6 +5,7 @@ import { ArrowLeft, ShoppingCart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProductImageCarousel from "@/components/ProductImageCarousel";
 import { useCart } from "@/contexts/CartContext";
 import { allProducts } from "@/data/products";
 import { useToast } from "@/hooks/use-toast";
@@ -81,19 +82,28 @@ const ProductDetail = () => {
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl" />
                 <div className="absolute -inset-2 bg-card rounded-xl" />
 
-                <div className="relative glass-strong rounded-xl overflow-hidden p-2">
-                  <motion.img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-auto rounded-lg"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  <div className="absolute inset-0 border-2 border-primary/30 rounded-xl pointer-events-none" />
+                <div className="relative z-10">
+                  {product.gallery && product.gallery.length > 0 ? (
+                    <ProductImageCarousel
+                      images={product.gallery}
+                      productName={product.title}
+                    />
+                  ) : (
+                    <div className="relative glass-strong rounded-xl overflow-hidden p-2">
+                      <motion.img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-full h-auto rounded-lg"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.6 }}
+                      />
+                      <div className="absolute inset-0 border-2 border-primary/30 rounded-xl pointer-events-none" />
+                    </div>
+                  )}
                 </div>
 
                 {product.featured && (
-                  <div className="absolute top-6 right-6 flex items-center gap-1 px-4 py-2 bg-primary text-primary-foreground rounded-full font-semibold">
+                  <div className="absolute top-6 right-6 flex items-center gap-1 px-4 py-2 bg-primary text-primary-foreground rounded-full font-semibold z-20">
                     <Star className="w-4 h-4 fill-current" />
                     Featured
                   </div>
@@ -233,13 +243,40 @@ const ProductDetail = () => {
                 </Button>
               </motion.div>
 
+              {/* Features Section */}
+              {product.id === "scraper-mini" && (
+                <div className="pt-8 border-t border-primary/20">
+                  <h3 className="font-display text-xl mb-4">Key Features</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Auto-heated muscle scraper with adjustable temperature settings</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Three consistent temperature options: 40°C (104°F), 45°C (113°F), 50°C (122°F)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Perfect for targeting small muscle groups with precision</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Ergonomic design for easy grip and control</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary">•</span>
+                      <span>Portable and lightweight for on-the-go use</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
               {/* Description */}
               <div className="pt-8 border-t border-primary/20">
                 <h3 className="font-display text-xl mb-4">About this product</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  This premium product is designed for elite performance and durability. 
-                  Engineered with the latest technology and crafted with attention to detail, 
-                  this is the choice of professionals and enthusiasts worldwide.
+                  {product.description || "This premium product is designed for elite performance and durability. Engineered with the latest technology and crafted with attention to detail, this is the choice of professionals and enthusiasts worldwide."}
                 </p>
               </div>
 
@@ -258,6 +295,39 @@ const ProductDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* Achedaway Product Showcase */}
+      {product.id === "scraper-mini" && (
+        <section
+          className="py-16 relative overflow-hidden"
+          style={{
+            backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F8e813a9f411740bfbfe2b75b4a5aa3de?format=webp&width=1200')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="container mx-auto px-6 relative z-10">
+            <motion.div
+              className="text-center max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-display text-4xl md:text-5xl text-white mb-6">
+                The Perfect Companion
+              </h2>
+              <p className="text-lg text-white/90 mb-8">
+                Achedaway Mini Scraper - Perfect for Targeting Small Muscle Groups
+              </p>
+              <p className="text-white/80 leading-relaxed">
+                Engineered for athletes, trainers, and wellness enthusiasts. The heated muscle scraper provides targeted relief with adjustable temperature settings, making it ideal for post-workout recovery and muscle maintenance.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Related Products Section */}
       <section className="py-16 border-t border-primary/20">

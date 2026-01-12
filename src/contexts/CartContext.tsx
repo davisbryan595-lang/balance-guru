@@ -10,6 +10,8 @@ export interface Product {
   featured?: boolean;
   sizes?: string[];
   colors?: string[];
+  description?: string;
+  gallery?: string[];
 }
 
 export interface CartItem extends Product {

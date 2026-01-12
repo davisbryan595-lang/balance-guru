@@ -7,9 +7,21 @@ export const allProducts: Product[] = [
     title: "Achedaway Mini Scraper",
     subtitle: "On-the-Go Heated Muscle Scraping Tool",
     price: 149.99,
-    image: "/products/scraper.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F4c583a3ee0a4493eb5e6fca0dada86fa?format=webp&width=800",
     category: "equipment",
     featured: true,
+    sizes: ["One Achedaway Mini Scraper", "Two Achedaway Mini Scrapers", "Achedaway Large Scraper + Mini Scraper Bundle"],
+    description: "Achedaway Mini Scraper - On-the-Go Heated Muscle Scraping Tool. Perfect for Targeting Small Muscle Groups",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F4c583a3ee0a4493eb5e6fca0dada86fa?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F734e8330d9cc42508b5ee654fbdff32e?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F8885cdd5410b4e91b34002f2e031f1cd?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F938adb9653a540638dadbcd1df1a099b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2Fe1bab8fcde944507a9347b09780adcf8?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2Ff67ddd22cb2b4ce696ae75809966fb6b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F8c8131b6b38e438789061aa1c319de5d?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2Fbd2db2bf76dc466fa0ee7e5d644defec%2F8e813a9f411740bfbfe2b75b4a5aa3de?format=webp&width=800",
+    ],
   },
   
   // Apparel - Women

@@ -8,6 +8,7 @@ import CartSidebar from "@/components/CartSidebar";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
+import Legacy from "./pages/Legacy";
 import ProductDetail from "./pages/ProductDetail";
 import Contact from "./pages/Contact";
 import Checkout from "./pages/Checkout";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/legacy" element={<Legacy />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/checkout" element={<Checkout />} />
