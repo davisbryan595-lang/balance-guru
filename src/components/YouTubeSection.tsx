@@ -12,7 +12,7 @@ const videos = [
     duration: "12:34",
     description: "Watch me break the Guinness World Record for the most incredible balance feat ever attempted.",
     featured: true,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "MJyKIsdFFWE",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ const videos = [
     duration: "8:21",
     description: "Perfect your foundation with these essential balance techniques.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "L3hjBovlaxk",
   },
   {
     id: "3",
@@ -32,7 +32,7 @@ const videos = [
     duration: "15:47",
     description: "A day in the life of The Balance Guru - see my training routine.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "2wHXYg3230I",
   },
   {
     id: "4",
@@ -42,7 +42,7 @@ const videos = [
     duration: "10:15",
     description: "Breaking down the physics behind seemingly impossible feats.",
     featured: false,
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "k0rlx4lpMlc",
   },
 ];
 
