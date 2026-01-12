@@ -8,6 +8,7 @@ import CartSidebar from "@/components/CartSidebar";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
+import Legacy from "./pages/Legacy";
 import ProductDetail from "./pages/ProductDetail";
 import Contact from "./pages/Contact";
 import Checkout from "./pages/Checkout";
